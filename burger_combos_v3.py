@@ -1,3 +1,4 @@
+# A dictionary to store the combo meals with their details
 combo_meals = {
     'Combo 1': {'items': ['Burger', 'Fries', 'Coke'], 'price': 5.99},
     'Combo 2': {'items': ['Chicken', 'Salad', 'Water'], 'price': 6.99},
@@ -42,7 +43,6 @@ def print_menu():
     for name, details in combo_meals.items():
         items_str = ', '.join(details['items'])
         print(f"{name}: {items_str} - ${details['price']}")
-
 
 # Main loop
 while True:
